@@ -1,1 +1,32 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>Todo List</h1>
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <button id="addTaskBtn">Add</button>
+        <button id="clearCompletedBtn">Clear Completed</button>
+        <ul id="taskList"></ul>
+        <p>Total tasks: <span id="totalTasks">0</span></p>
+        <div class="filter-options">
+            <button id="allBtn" class="filter-btn active">All</button>
+            <button id="completeBtn" class="filter-btn">Complete</button>
+            <button id="uncompleteBtn" class="filter-btn">Uncomplete</button>
+        </div>
+    </div>
+    <!-- ... previous HTML code ... -->
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
