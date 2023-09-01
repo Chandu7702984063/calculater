@@ -1,3 +1,92 @@
+/* Reset default list styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+/* Style the task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style task items */
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style circular checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    /* Make it circular */
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style the custom circular checkbox when checked */
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    /* Change background color when checked */
+    border-color: #4CAF50;
+    /* Change border color when checked */
+}
+
+/* Style the delete button */
+.delete-btn {
+    background-color: #ff6464;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the input and buttons */
+input[type="text"],
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+/* Style the total tasks text */
 p {
-    color: red;
+    margin: 10px 0;
+}
+
+/* Style filter buttons */
+.filter-options {
+    margin-top: 10px;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-btn.active {
+    background-color: #4CAF50;
+    /* Active filter button color */
+    color: white;
 }
